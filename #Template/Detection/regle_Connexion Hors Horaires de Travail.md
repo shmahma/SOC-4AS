@@ -20,6 +20,7 @@ index="connectix"  sourcetype="WinEventLog" EventCode=4624
 
 ```
 title: Détection de la connexion d'un utilisateur en dehors des heures normales de travail
+id: 7dac54cc-7d75-4e01-a755-0995e5505f69
 status: experimental
 description: Cette règle détecte les connexions d'utilisateurs en dehors des heures normales de travail (6h00 à 20h00).
 author: Inès OUESALTI
