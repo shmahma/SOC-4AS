@@ -92,7 +92,7 @@ index="connectix" sourcetype="WinEventLog"
 
 ```
 title: Détection des activités de Mustang Panda
-
+id: 43b3cbe9-ffd0-4607-98ed-c1114f3ccf01
 status: experimental
 description: Détecte des comportements associés aux techniques d'attaque de Mustang Panda, comme l'utilisation de PowerShell ou WMIC par des comptes suspects.
 author: Hadil M .
