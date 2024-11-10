@@ -1,4 +1,4 @@
-1. Admin User Creation :
+Admin User Creation
 
 Une création de compte admin peut indiquer une action légitime ou un acte suspect.
   - Vérifier les adresses IP d’origine.
