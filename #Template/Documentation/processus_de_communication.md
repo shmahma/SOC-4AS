@@ -31,9 +31,7 @@ Impact : Indiquer si l’incident affecte les services, la sécurité ou les don
 Mesures prises : Actions immédiates prises par votre équipe pour résoudre l’incident.
 Plan de résolution : Temps estimé pour résoudre l'incident ou rétablir le service.
 Suivi : Détails sur la façon dont le client sera tenu informé de l’évolution de la situation.
-Exemple de message :
-python
-Copier le code
+
 Objet : Notification de Sécurité - Alerte Compte Verrouillé
 
 Cher(e) [Nom du client],
@@ -59,10 +57,8 @@ Suivi : Assurez-vous que le client a bien reçu l'alerte et qu'il comprend la si
 Responsable : Analyste de sécurité / Équipe technique
 Action : Résoudre le problème ou restaurer le service si nécessaire. Informer régulièrement le client de l'état d'avancement.
 Communication au client : Après chaque étape majeure (ex. résolution partielle ou totale), envoyez des mises à jour au client pour le tenir informé de la progression.
-Exemple de mise à jour :
 
-rust
-Copier le code
+
 Objet : Mise à jour sur l'Incident de Sécurité - Compte Verrouillé
 
 Cher(e) [Nom du client],
