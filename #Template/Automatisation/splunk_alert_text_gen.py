@@ -52,7 +52,11 @@ template = """
 jinja_template = Template(template)
 
 # Render template with Splunk data
-print(jinja_template.render(jsout=jsout, datetime=datetime))
+output = jinja_template.render(jsout=jsout, datetime=datetime)
+
+# Write the result to a markdown file
+with open("alertes.md", "w") as file:
+    file.write(output)
 
 # Logout from Splunk
 service.logout()
