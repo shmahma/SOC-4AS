@@ -27,7 +27,7 @@ Avant d'exécuter ce script, assurez-vous que les bibliothèques suivantes sont 
 
   
 
-Ou utilisé le fichier requirements.txt:
+Ou utilisez le fichier requirements.txt:
 
 ```bash
 pip install -r requirements.txt
@@ -55,9 +55,6 @@ Le script utilise les informations de connexion suivantes pour se connecter au s
 
 -  `password` : mot de passe de votre compte Splunk
 
-  
-
-Assurez-vous de modifier ces valeurs directement dans le script si nécessaire.
 
   
 
