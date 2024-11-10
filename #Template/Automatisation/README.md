@@ -7,7 +7,7 @@
 
   
 
-Ce script en Python se connecte à un serveur Splunk et extrait les alertes ayant un impact "critique" ou "élevé" au cours des dernières 24 heures. Les résultats sont récupérés en format JSON et un modèle de notification en Markdown est généré pour afficher chaque alerte, avec son titre, sa description et son horodatage.
+Ce script en Python se connecte au serveur Splunk et extrait les alertes ayant un impact "critique" ou "élevé" au cours des dernières 24 heures. Les résultats sont récupérés en format JSON et un modèle de notification en Markdown est généré pour afficher chaque alerte, avec son titre, sa description et son horodatage.
 
   
 
