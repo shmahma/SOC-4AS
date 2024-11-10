@@ -7,7 +7,7 @@
 
   
 
-Ce script en Python se connecte à un serveur Splunk et extrait les alertes ayant un impact "critique" ou "élevé" au cours des dernières 24 heures. Les résultats sont récupérés en format JSON et un modèle de notification en Markdown est généré pour afficher chaque alerte, avec son titre, sa description et son horodatage.
+Ce script en Python se connecte au serveur Splunk et extrait les alertes ayant un impact "critique" ou "élevé" au cours des dernières 24 heures. Les résultats sont récupérés en format JSON et un modèle de notification en Markdown est généré pour afficher chaque alerte, avec son titre, sa description et son horodatage.
 
   
 
@@ -27,7 +27,7 @@ Avant d'exécuter ce script, assurez-vous que les bibliothèques suivantes sont 
 
   
 
-Ou utilisé le fichier requirements.txt:
+Ou utilisez le fichier requirements.txt:
 
 ```bash
 pip install -r requirements.txt
@@ -55,9 +55,6 @@ Le script utilise les informations de connexion suivantes pour se connecter au s
 
 -  `password` : mot de passe de votre compte Splunk
 
-  
-
-Assurez-vous de modifier ces valeurs directement dans le script si nécessaire.
 
   
 
