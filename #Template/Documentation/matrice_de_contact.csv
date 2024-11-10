@@ -1,1 +1,9 @@
-Nom;Entreprise;R�le;E-mail
+Nom;Entreprise;Rôle;E-mail
+Jean Dupont;Connectix;Équipe de surveillance de la sécurité / SOC;j.dupont@connectix.com
+Marie Lefevre;Connectix;Analyste de sécurité;m.lefevre@connectix.com
+Pierre Martin;Connectix;Chef de la sécurité / Responsable des opérations;p.martin@connectix.com
+Claire Bernard;Connectix;Responsable des communications;c.bernard@connectix.com
+Lucas Durand;Connectix;Responsable des relations clients;l.durand@connectix.com
+Sophie Robert;Connectix;Analyste de sécurité / Équipe technique;s.robert@connectix.com
+David Lefevre;Connectix;Responsable des opérations de sécurité;d.lefevre@connectix.com
+Elena Garcia;Connectix;Responsable du support client;e.garcia@connectix.com
