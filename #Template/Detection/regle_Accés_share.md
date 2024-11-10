@@ -20,6 +20,7 @@ index="connectix" sourcetype="WinEventLog" EventCode=5140
 
 ```
 title: Détection d'une tentative d'accès à un partage réseau par un utilisateur exclu
+id: 5869168a-6a18-4d66-96a7-6d530da89795
 status: experimental
 description: |
     Cette règle détecte les tentatives d'accès à un partage réseau via l'événement `EventCode=5140` où l'utilisateur tentant d'accéder au partage réseau n'est pas dans la liste d'utilisateurs spécifiée.
