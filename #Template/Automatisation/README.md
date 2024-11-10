@@ -70,7 +70,7 @@ Le script exécute une requête de recherche pour récupérer les alertes ayant 
   
 
 ```bash 
-search_query = 'search index=alerts event.event_title="*" (event.impact="critical" OR event.impact="high") earliest=-24h'
+search_query = 'search index=alerts event.event_title="*" (event.impact="high" OR event.urgency="high") earliest=-24h'
 ```
 
   
