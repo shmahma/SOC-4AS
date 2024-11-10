@@ -15,13 +15,12 @@ service = client.connect(
 )
 
 # Requête de recherche Splunk
-search_query = 'search index=alerts event.event_title="*" (event.impact="critical" OR event.impact="high") earliest=-24h'
+search_query = 'search index=alerts event.event_title="*" (event.impact="high" OR event.urgency="high") earliest=-24h'
 
 # Envoi de la requête de recherche à Splunk
 search_results = service.jobs.oneshot(search_query, output_mode='json')
 # Récupération des résultats de la recherche au format JSON
 jsout = json.loads(search_results.read())
-
 
 # Process each result to parse the _raw field as JSON
 for result in jsout['results']:
@@ -33,11 +32,17 @@ for result in jsout['results']:
     except json.JSONDecodeError:
         # If _raw is not valid JSON, handle the error
         result['description'] = 'No description available'
+    
+    # Determine the severity (CRITICAL or HIGH)
+    if result['event.impact'] == "high" and result['event.urgency'] == "high":
+        result['severity'] = 'CRITICAL'
+    else:
+        result['severity'] = 'HIGH'
 
 # Jinja2 template for notification in Markdown
 template = """
 {% for result in jsout['results'] %}
-# Alerte : *[{{ result['event.impact'] }}]* {{ result['event.event_title'] }}
+# Alerte : *[{{ result['severity'] }}]* {{ result['event.event_title'] }}
     Description : {{ result['description'] }}
     Horodatage : {{ datetime.datetime.fromisoformat(result['_time']) }}
 {% endfor %}
